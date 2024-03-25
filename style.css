@@ -1,0 +1,153 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    background: linear-gradient(45deg, #190361, #bb00ff);
+    background-size: 200% 200%;
+    animation: gradient 10s ease infinite;
+    height: 100vh;
+    font-size: 1.6rem;
+
+    display: grid;
+    place-items: center;
+}
+
+body,
+input,
+button {
+    font-family: 'DM Sans', sans-serif;
+}
+
+main {
+    width: min(42.8rem, 90%);
+    padding: 4.8rem 6.4rem 6.4rem;
+
+    border-radius: .5rem;
+    background: #fff;
+    box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+    text-align: center;
+}
+
+main h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.4rem;
+}
+
+main h1,
+main h2,
+main p {
+    color: #34355B;
+}
+
+main p {
+    font-weight: 400;
+    margin-bottom: 2rem;
+}
+
+main img:hover {
+    cursor: pointer;
+    animation: shake 0.3s infinite;
+}
+
+.hide {
+    display: none;
+}
+
+main h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.4rem;
+    font-weight: 700;
+    margin-bottom: 1.7rem;
+}
+
+.luck {
+    background: #E4EDF1;
+    box-shadow: .2rem .2rem .2rem 0 rgba(85, 85, 85, 0.50);
+    animation: toFadeIn 2s;
+}
+
+.luck p {
+    font-family: 'Dancing Script', cursive;
+    color: #000;
+    padding: 1rem;
+    text-align: center;
+    font-size: 2.4rem;
+    font-weight: 400;
+}
+
+.screenTwo button {
+    background: #FF9500;
+    border-radius: .4rem;
+    border: 0;
+    padding: 1.6rem;
+    color: #FFF;
+    font-size: 1.5rem;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.screenTwo button:hover {
+    background: #ef910d;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(0, 0);
+    }
+    20% {
+        transform: translate(-5px, 0);
+    }
+    40% {
+        transform: translate(5px, 0);
+    }
+    60% {
+        transform: translate(-5px, 0);
+    }
+    80% {
+        transform: translate(5px, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
+}
+
+@keyframes toFadeIn {
+    0% {
+        transform: translateY(150px) scale(0.1);
+    }
+    100% {
+        transform: translateY(0px) scale(1);
+    }
+}
+
+@media(max-width: 425px) {
+    main {
+        width: 90vw;
+        margin: 2rem auto;
+    }
+
+    main img {
+        width: 100%;
+    }
+}
