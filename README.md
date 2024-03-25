@@ -19,7 +19,6 @@ Neste desafio deverá criar um jogo chamado Biscoito da Sorte, no qual o usuári
 Aqui está uma prévia do resultado final do projeto desenvolvido
 ![demo](https://github.com/marlonfrnds/biscoito-da-sorte/assets/115473116/479f51a0-1f23-49e0-83a9-b83b2e7a5ad2)
 
-<br>
 
 ## Tecnologias
 - HTML
